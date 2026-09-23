@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instagram</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- LOGIN -->
+        <section class="login-box">
+
+           <div class="logo">Instagram</div>
+
+            <form id="loginForm">
+
+                <input
+                    type="text"
+                    id="usuario"
+                    placeholder="Telefone, nome de usuário ou e-mail"
+                    autocomplete="off"
+                    required
+                >
+
+                <div class="senha-container">
+
+                    <input
+                        type="password"
+                        id="senha"
+                        placeholder="Senha"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        id="mostrarSenha"
+                        class="mostrar"
+                    >
+                        Mostrar
+                    </button>
+
+                </div>
+
+                <button type="submit" class="entrar">
+                    Entrar
+                </button>
+
+            </form>
+
+
+            <!-- OU -->
+
+            <div class="ou">
+                <span></span>
+                <strong>OU</strong>
+                <span></span>
+            </div>
+
+
+            <!-- FACEBOOK -->
+
+            <button class="facebook">
+                Entrar com o Facebook
+            </button>
+
+
+            <!-- SENHA -->
+
+            <a href="#" class="esqueceu">
+                Esqueceu a senha?
+            </a>
+
+        </section>
+
+
+        <!-- CADASTRO -->
+
+        <section class="criar-conta">
+
+            <span>Não tem uma conta?</span>
+
+            <a href="#">
+                Cadastre-se
+            </a>
+
+        </section>
+
+
+        <!-- APLICATIVO -->
+
+        <section class="aplicativo">
+
+            <p>Obtenha o aplicativo.</p>
+
+            <div class="lojas">
+
+                <div class="loja apple">
+                    
+                    <div>
+                        <small>Download on the</small>
+                        <strong>App Store</strong>
+                    </div>
+                </div>
+
+                <div class="loja google">
+                    ▶
+                    <div>
+                        <small>GET IT ON</small>
+                        <strong>Google Play</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RODAPÉ -->
+
+        <footer>
+
+            <div class="links">
+
+                <a href="#">SOBRE</a>
+                <a href="#">AJUDA</a>
+                <a href="#">IMPRENSA</a>
+                <a href="#">API</a>
+                <a href="#">CARREIRAS</a>
+
+                <a href="#">PRIVACIDADE</a>
+                <a href="#">TERMOS</a>
+                <a href="#">LOCALIZAÇÃO</a>
+
+                <a href="#">CONTAS MAIS RELEVANTES</a>
+                <a href="#">HASHTAGS</a>
+                <a href="#">IDIOMA</a>
+
+            <p class="copyright">
+                © 2020 INSTAGRAM
+            </p>
+
+        </footer>
+
+
+        <!-- PAINEL -->
+
+        <button id="abrirPainel" class="painel-btn">
+            Área de registros
+        </button>
+
+    </main>
+
+
+    <!-- MODAL -->
+
+    <div id="painel" class="modal">
+
+        <div class="modal-content">
+
+            <button id="fecharPainel" class="fechar">
+                ×
+            </button>
+
+            <h2>Área de registros</h2>
+
+            <p class="descricao">
+                Registros de demonstração
+            </p>
+
+            <div id="listaRegistros" class="registros"></div>
+
+            <button id="limparRegistros" class="limpar">
+                Limpar registros
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="mensagem" class="mensagem"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
